@@ -1,3 +1,3 @@
-![selection](https://github.com/kimsihyeon24/array/assets/126483882/e94e84b9-085f-4c57-8285-dd5ee176dcc3)
-![insertion](https://github.com/kimsihyeon24/array/assets/126483882/ece558b0-075d-4f0e-a453-58809395673c)
-![bubble](https://github.com/kimsihyeon24/array/assets/126483882/bba04796-3331-4fac-b8e2-103d7183f95e)
+![스크린샷 2023-11-23 144149](https://github.com/kimsihyeon24/array/assets/126483882/eb9dbca3-2c76-4e69-bda2-59897f57b202)
+![스크린샷 2023-11-23 144207](https://github.com/kimsihyeon24/array/assets/126483882/12bbcda7-60d2-4c57-9ed4-dcb332d09381)
+![스크린샷 2023-11-23 144226](https://github.com/kimsihyeon24/array/assets/126483882/c2b8ad52-9136-4973-967b-1c1de8d77d87)
