@@ -23,11 +23,11 @@ void selection_sort(int list[], int n , int a)
 		}
 		SWAP(list[i], list[least], temp);
 		move_count++;
-		if (a == 0) {
+		
 			for (int k = 0; k < n; k++)
 				printf("%d ", list[k]);
 			printf("\n");
-		}	
+		
 	}
 	move_count_all += move_count;
 	compare_count_all += compare_count;
@@ -41,11 +41,11 @@ void insertion_sort(int list[], int n, int a)
 	int i, j, key;
 	for (i = 1; i < n; i++) {
 		key = list[i];
-		if (a == 0) {
+		
 			for (int j = 0; j < n; j++)
 				printf("%d ", list[j]);
 			printf("\n");
-		}
+		
 
 		for (j = i - 1; j >= 0 && list[j] > key; j--) {
 			list[j + 1] = list[j]; 		// 레코드의 오른쪽 이동
@@ -81,12 +81,12 @@ void bubble_sort(int list[], int n, int a) {
 				compare_count++;
 			}
 			// 정렬 과정을 출력
-			if (a == 0) {
+			
 				for (j = 0; j < n; j++) {
 					printf("%d ", list[j]);
 				}
 				printf("\n");
-			}
+			
 			// 정렬이 완료되었는지 확인
 			if (swapped == 0) {
 				is_sorted = 1; // 정렬이 완료되었다면 표시
@@ -117,13 +117,13 @@ int main(void)
 	for (a = 0; a < 20; a++) {
 		for (i = 0; i < n; i++)      	// 난수 생성 및 출력 
 			list[i] = rand() % 100;
-		if (a == 0) {
-			printf("Original List\n");
+		
+			printf("\nOriginal List   %d\n", a+1);
 			for (i = 0; i < n; i++)
 				printf("%d ", list[i]);
 			printf("\n\n");
 			printf("Selection_sort\n");
-		}
+		
 		selection_sort(list, n, a); // 선택정렬 호출 	//
 	}
 	printf("\nCompare Count Avg!!! : %d\n", compare_count_all / 20);  
@@ -135,12 +135,12 @@ int main(void)
 	for (a = 0; a < 20; a++) {
 		for (i = 0; i < n; i++)  	// 난수 생성 및 출력 
 			list[i] = rand() % 100;
-		if (a == 0) {
-			printf("Original List\n");
+		
+			printf("\nOriginal List  %d \n",a+1);
 			for (i = 0; i < n; i++)
 				printf("%d ", list[i]);
 			printf("\n\ninsertion_sort\n");
-		}
+		
 		insertion_sort(list, n, a); // 삽입정렬 호출 
 	}
 
@@ -153,12 +153,12 @@ int main(void)
 	for (a = 0; a < 20; a++) {
 		for (i = 0; i < n; i++)      	// 난수 생성 및 출력 
 			list[i] = rand() % 100;
-		if (a == 0) {
-			printf("\nOriginal List\n");
+		
+			printf("\nOriginal List  %d\n", a+1);
 			for (i = 0; i < n; i++)
 				printf("%d ", list[i]);
 			printf("\n\nbubble_sort\n");
-		}
+		
 		bubble_sort(list, n, a); // 버블정렬 호출 
 	}
 	printf("\nCompare Count Avg!!! : %d\n", compare_count_all / 20);
